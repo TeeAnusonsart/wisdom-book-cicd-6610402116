@@ -1,0 +1,22 @@
+[2026-02-13 07:53:04Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-02-13 07:53:04Z INFO HostContext] Well known directory 'Bin': 'C:\Users\anuso\Desktop\project\wisdom-book-cicd-6610402116\actions-runner\bin'
+[2026-02-13 07:53:04Z INFO HostContext] Well known directory 'Root': 'C:\Users\anuso\Desktop\project\wisdom-book-cicd-6610402116\actions-runner'
+[2026-02-13 07:53:04Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\anuso\Desktop\project\wisdom-book-cicd-6610402116\actions-runner\.credentials'
+[2026-02-13 07:53:04Z INFO HostContext] Well known directory 'Bin': 'C:\Users\anuso\Desktop\project\wisdom-book-cicd-6610402116\actions-runner\bin'
+[2026-02-13 07:53:04Z INFO HostContext] Well known directory 'Root': 'C:\Users\anuso\Desktop\project\wisdom-book-cicd-6610402116\actions-runner'
+[2026-02-13 07:53:04Z INFO HostContext] Well known config file 'Runner': 'C:\Users\anuso\Desktop\project\wisdom-book-cicd-6610402116\actions-runner\.runner'
+[2026-02-13 07:53:04Z INFO Worker] Version: 2.331.0
+[2026-02-13 07:53:04Z INFO Worker] Commit: 39f6c643d3032f8795fa71f1482731ca90c8e038
+[2026-02-13 07:53:04Z INFO Worker] Culture: th-TH
+[2026-02-13 07:53:04Z INFO Worker] UI Culture: th-TH
+[2026-02-13 07:53:04Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-02-13 07:53:04Z INFO ProcessChannel] Receiving message of length 21691, with hash 'c35f814da6d9b5175d341cf1992ac808bda04ccc70d57ef253a9b328a11558fc'
+[2026-02-13 07:53:04Z INFO Worker] Message received.
+[2026-02-13 07:53:04Z ERR  Worker] System.ArgumentOutOfRangeException: Index and length must refer to a location within the string. (Parameter 'length')
+   at System.String.ThrowSubstringArgumentOutOfRange(Int32 startIndex, Int32 length)
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at GitHub.DistributedTask.Logging.ValueEncoders.PowerShellPreAmpersandEscape(String value)
+   at GitHub.DistributedTask.Logging.SecretMasker.AddValue(String value)
+   at GitHub.Runner.Worker.Worker.InitializeSecretMasker(AgentJobRequestMessage message)
+   at GitHub.Runner.Worker.Worker.RunAsync(String pipeIn, String pipeOut)
+   at GitHub.Runner.Worker.Program.MainAsync(IHostContext context, String[] args)

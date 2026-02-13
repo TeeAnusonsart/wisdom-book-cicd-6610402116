@@ -52,7 +52,7 @@ jobs:
       - name: Deploy to Kubernetes
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        shell: bash
+        shell: pwsh
         run: |
           envsubst < k8s/deployment.yml | kubectl apply -f -
           kubectl apply -f k8s/service.yml

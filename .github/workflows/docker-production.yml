@@ -44,6 +44,7 @@ jobs:
           fetch-depth: 0
 
       - name: show kube context
+        shell: pwsh
         run: |
           kubectl config current-context
           kubectl get nodes

@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "MSI",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus22.actions.githubusercontent.com/9kdnZtKYoZgseFgfuhVWeQJATLnh1QtbWsSIvXXHuXIXCP73cb/",
+  "gitHubUrl": "https://github.com/TeeAnusonsart/wisdom-book-cicd-6610402116",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

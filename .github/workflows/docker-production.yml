@@ -33,7 +33,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/wisdom-book:latest
-
   deploy:
     needs: build-and-push
     runs-on: self-hosted # self-hosted runner in your machine
